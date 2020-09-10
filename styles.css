@@ -1,0 +1,18 @@
+.form-cont{
+	position: absolute;
+	top:50%;
+	left: 40%;
+	transform: translateX(100px);
+	transform: translateY(-200px);
+	margin:20px;
+}
+
+.actualDiv{
+	position: absolute;
+	top:40%;
+	left: 37%;
+}
+
+button{
+	margin:20px;
+}

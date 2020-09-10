@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Exersice 2 </title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="form-cont">
+		<form onsubmit=" return Validate(this)" id="form">
+		 	<div class="inputText">
+		 		<strong style="font-size: 30px;">Courier Form</strong><br><br>
+  				<label for="fname">First name:</label><br>
+  				<input type="text" id="fname" name="fname" height="20" onfocusout="checkFName()"><br>
+  				<label for="lname">Last name:</label><br>
+  				<input type="text" id="lname" name="lname" onfocusout="checkLName()"><br><br>
+				<label for="Add">Address Line 1 :</label><br>
+  				<input type="text" id="add1" name="add" onfocusout="checkAdd()"><br><br>
+  				<label for="Add">Address Line 2 :</label><br>
+  				<input type="text" id="add2" name="add"><br><br>
+  				<label for="Add">Address Line 3 :</label><br>
+  				<input type="text" id="add3" name="add"><br><br>
+  				<label for="Add">City :</label><br>
+  				<input type="text" id="city" name="add"><br><br>
+  				<label for="Add">Pincode :</label><br>
+  				<input type="text" id="pin" name="add"><br><br>
+  				<label for="otp">Pass Code</label><br>
+  				<input type="password" id="otp" name="otp" onfocusout="checkPass()" ><br><br>
+  		 	</div>
+  		 	<div> Type of Consignment</div>
+  			<input type="radio" id="Fragile" name="tc" value="Fragile">
+  			<label for="Credit Card">Fragile</label><br>
+  			<input type="radio" id="Books" name="tc" value="Books">
+  			<label for="Debit Card">Compressible</label><br>
+  			<input type="radio" id="Other" name="tc" value="Other">
+  			<label for="Cash">Other</label><br><br>
+  			
+            <div> Mode of Payment</div>
+  			<input type="radio" id="Credit Card" name="pmethod" value="Credit Card">
+  			<label for="Credit Card">Credit Card</label><br>
+  			<input type="radio" id="Debit Card" name="pmethod" value="Debit Card">
+  			<label for="Debit Card">Debit Card</label><br>
+  			<input type="radio" id="Cash" name="pmethod" value="Cash">
+  			<label for="Cash"> Cash</label><br><br>
+  			<input type="checkbox" id="Agree" name="Agree" value="Agree">
+  			<label for="Agree"> Agree to the terms and Condition</label><br>
+  			<label for="drop"> Location</label>
+  			<select id="Loc" name="drop">
+				<option value="0">Select</option>
+				<option value="1">Location 1</option>
+				<option value="2">Location 2</option>
+				<option value="3">Location 3</option>
+			</select>
+  			<div>
+  			<input type="submit" value="Submit">
+  			<input type="reset">
+  			</div>
+</form>
+	</div>
+<script type="text/javascript" src="index.js"></script>
+</body>
+</html>
