@@ -6,8 +6,21 @@ function Validate(x)
 {
 	flag=true;
 
+    var fname= document.getElementsByName('fname');
+    if(fname[0].value.length==0){
+        alert("First Name cannot be Empty");
+    }
+
+
+    var add= document.getElementsByName('add');
+    if(add[0].value.length==0){
+        alert("Address Line 1 cannot be Empty");
+    }
+
+
+
     //Validating City Field
-    city= document.getElementById('city');
+    var city= document.getElementById('city');
     if(city.value.length==0 || !nameReg.test(city.value)){
         alert("Please Mention City Correctly");
         flag=false;
