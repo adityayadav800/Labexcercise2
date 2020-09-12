@@ -6,15 +6,19 @@ function Validate(x)
 {
 	flag=true;
 
+    //Validating Name Field
     var fname= document.getElementsByName('fname');
     if(fname[0].value.length==0){
         alert("First Name cannot be Empty");
+        flag=false;
     }
 
 
+    //Validating Address Field
     var add= document.getElementsByName('add');
     if(add[0].value.length==0){
         alert("Address Line 1 cannot be Empty");
+        flag=false;
     }
 
 
